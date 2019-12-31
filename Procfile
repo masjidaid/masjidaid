@@ -1,0 +1,1 @@
+web: gunicorn masjidaid.wsgi --log-file -
