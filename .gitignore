@@ -5,8 +5,8 @@
 __pycache__
 
 # Migrations
-**/migrations/*
-!**/migrations/__init__.py
+# **/migrations/*
+# !**/migrations/__init__.py
 
 # Application
 config/environment.py
