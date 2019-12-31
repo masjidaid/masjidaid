@@ -1,0 +1,23 @@
+# Base
+*.sqlite3
+.DS_Store
+.idea
+__pycache__
+
+# Migrations
+**/migrations/*
+!**/migrations/__init__.py
+
+# Application
+config/environment.py
+config/settings/development.py
+config/settings/production.py
+media/*
+.vscode
+
+#coverage
+.coverage
+htmlcov/
+
+# Environment
+env
