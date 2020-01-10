@@ -25,7 +25,7 @@ SECRET_KEY = "-vcg!e6+s5+zrq8zlv5&ed@@mo+#*-pxfm6c%!!xz3i=5ha=+7"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["masjidaid.herokuapp.com"]
+ALLOWED_HOSTS = ["masjidaid.herokuapp.com" 'localhost', '127.0.0.1']
 AUTH_USER_MODEL = 'accounts.User'
 
 
@@ -76,10 +76,22 @@ WSGI_APPLICATION = 'masjidaid.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get("DB_NAME"),
+        'USER': os.environ.get("DB_USER"),
+        'PASSWORD': os.environ.get("DB_PASSWORD"),
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
