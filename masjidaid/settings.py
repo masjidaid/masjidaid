@@ -26,7 +26,7 @@ SECRET_KEY = "-vcg!e6+s5+zrq8zlv5&ed@@mo+#*-pxfm6c%!!xz3i=5ha=+7"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["masjidaid.herokuapp.com" 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'masjidaid.herokuapp.com']
 AUTH_USER_MODEL = 'accounts.User'
 
 
