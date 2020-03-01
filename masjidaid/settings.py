@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
-    'masjidaid.accounts',
+    'masjidaid.accounts',    
+    'masjidaid.campaign',    
+    'masjidaid.transaction',    
 ]
 
 MIDDLEWARE = [
