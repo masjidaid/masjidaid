@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'masjidaid.accounts',
     'masjidaid.campaign',
     'masjidaid.transaction',
+    'corsheader',
 ]
 
 MIDDLEWARE = [
@@ -164,3 +165,22 @@ STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 # STATICFILES_DIRS = (
 #     os.path.join(BASE_DIR, 'static'),
 # )
+
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+# CORS_ORIGIN_WHITELIST = [    
+#     'http://localhost:3000',        
+# ]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-disposition',
+    'content-type',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
