@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'masjidaid.accounts',
     'masjidaid.campaign',
     'masjidaid.transaction',
-    'corsheader',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
